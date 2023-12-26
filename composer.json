@@ -1,0 +1,16 @@
+{
+    "name": "doubler/tiktok-open-api",
+    "description": "TikTok Open API SDK",
+    "autoload": {
+        "psr-4": {
+            "Doubler\\TiktokOpenApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zsc",
+            "email": "985342160@qq.com"
+        }
+    ],
+    "require": {}
+}
