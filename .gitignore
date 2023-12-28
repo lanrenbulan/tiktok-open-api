@@ -1,3 +1,5 @@
 /vendor/
 /test/
 /.idea/
+composer.lock
+/examples/common.php
