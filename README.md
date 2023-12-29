@@ -1,6 +1,10 @@
-# tiktok-open-api
+# TikTok Open API SDK
 
-TikTok Open API SDK
+## Install
+
+```
+composer require doubler/tiktok-open-api
+```
 
 ## Basic
 ```
