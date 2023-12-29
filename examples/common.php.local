@@ -1,0 +1,34 @@
+<?php
+
+use Doubler\OpenApiSdk\Client;
+
+include __DIR__ . '/../vendor/autoload.php';
+
+$context = new \Doubler\TiktokOpenApi\Context([
+    'service_id' => '',
+    'app_key' => '',
+    'app_secret' => '',
+
+    'locale' => 'en-US',
+
+    'access_token' => '',
+    'refresh_token' => '',
+    'shop_cipher' => '',
+]);
+
+function execute($request): void
+{
+    $client = new Client();
+
+    echo "\n";
+
+    echo $request->getMethod(), ' ', $request->getUri(), "\n";
+
+    echo $request->getBody()->getContents(), "\n";
+
+    $response = $client->send($request);
+
+    print_r($response->getBody()->getContents());
+
+    echo "\n\n";
+}
